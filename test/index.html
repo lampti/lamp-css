@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>LAMP CSS</title>
+
+	<link rel="stylesheet" href="../dist/lamp.css">
+</head>
+<body>
+	<style>
+		/*------------------------------*\
+    Styling
+		\*------------------------------*/
+
+		body {
+		    padding: 20px;
+		}
+
+		.column {
+		    background: #eee;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    color: #777;
+		    padding: 5px;
+		    min-height: 30px;
+		    text-align: center;
+		}
+
+		.row {
+		    margin-bottom: 10px;
+		}
+
+		.row:last-child {
+		    margin-bottom: 0;
+		}
+
+		.column .column {
+		    color: #eee;
+		    background: #333;
+		    border-color: #000;
+		}
+
+		.p {
+		  font-size: 14px;
+		  text-align: center;
+		  padding-top: 100px;
+		}
+
+		@media only screen and (max-width: 550px) {
+		    .row {
+		        margin-bottom: 0;
+		    }
+		    .column {
+		        margin-bottom: 10px;
+		    }
+		    .row:last-child .column:last-child {
+		        margin-bottom: 0;
+		    }
+		}
+	</style>
+
+	<div class="row">
+	  <div class="column column-4">4</div>
+	  <div class="column column-4">4</div>
+	  <div class="column column-4">4</div>
+	</div>
+	 
+	<div class="row">
+	  <div class="column column-2">2</div>
+	  <div class="column column-4">4</div>
+	  <div class="column column-4">4</div>
+	  <div class="column column-2">2</div>
+	</div>
+	
+</body>
+</html>
